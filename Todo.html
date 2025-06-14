@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Todo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ToDo App</h1>
+    <div class="inputs">
+      <input type="text" id="inp" placeholder="Enter Your Task" />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all" class="filter-btn active">All</button>
+      <button data-filter="active" class="filter-btn">Active</button>
+      <button data-filter="completed" class="filter-btn">Completed</button>
+    </div>
+
+    <div class="task-counter"><span id="counter">0</span> items left</div>
+
+    <div class="text" id="task-list"></div>
+
+    <button class="clear-btn" onclick="clearCompleted()">Clear Completed</button>
+  </div>
+
+  <script src="Todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(4, 29, 29);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid teal;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  background-color: rgb(4, 29, 29);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: teal;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-btn {
+  background-color: #eee;
+  color: black;
+  padding: 5px 10px;
+}
+
+.filter-btn.active {
+  background-color: teal;
+  color: white;
+}
+
+.task-counter {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(5, 31, 31);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.text ul:hover {
+  background-color: rgb(20, 50, 50);
+}
+
+.text ul.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.text ul span {
+  flex: 1;
+}
+
+.text ul i {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+}
+
+.clear-btn {
+  display: block;
+  margin: 10px auto 0;
+  background: crimson;
+}
